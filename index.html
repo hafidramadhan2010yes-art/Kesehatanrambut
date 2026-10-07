@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HairCare - Kesehatan, Gaya & Serum Rambut</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+html{scroll-behavior:smooth}
+body{background:#f4f8f3;color:#243126}
+header{
+  min-height:430px;display:flex;align-items:center;justify-content:center;
+  text-align:center;padding:30px;color:white;
+  background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.68)),
+  url("https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1400&q=80");
+  background-size:cover;background-position:center
+}
+header h1{font-size:48px;letter-spacing:3px;margin-bottom:15px}
+header p{font-size:18px;max-width:700px;line-height:1.7}
+.btn{
+  display:inline-block;margin-top:25px;padding:13px 28px;background:#78a86b;
+  color:white;text-decoration:none;border-radius:30px;font-weight:bold;transition:.3s
+}
+.btn:hover{background:#5e8e52;transform:scale(1.05)}
+nav{
+  background:white;padding:17px;text-align:center;position:sticky;top:0;z-index:100;
+  box-shadow:0 2px 10px #0001
+}
+nav a{color:#26352a;text-decoration:none;margin:0 12px;font-weight:bold}
+nav a:hover{color:#70a063}
+.container{width:90%;max-width:1150px;margin:auto;padding:60px 0}
+.title{text-align:center;margin-bottom:40px}
+.title h2{font-size:34px;margin-bottom:10px}
+.title p{color:#68736a;line-height:1.6}
+.info{
+  background:#dfead9;border-radius:20px;padding:30px;
+  box-shadow:0 5px 20px #0000000d
+}
+.info p{line-height:1.8;margin:10px 0}
+.cards,.products{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:25px
+}
+.card,.product{
+  background:white;border-radius:20px;overflow:hidden;
+  box-shadow:0 5px 20px #00000012;transition:.3s
+}
+.card:hover,.product:hover{transform:translateY(-7px);box-shadow:0 12px 30px #0002}
+.card img,.product img{width:100%;height:270px;object-fit:cover;display:block}
+.content,.product-content{padding:20px}
+.content h3,.product h3{font-size:21px;margin-bottom:9px}
+.content p,.product p{color:#68736a;line-height:1.6;font-size:14px}
+.rating{color:#e5a900;margin:10px 0}
+.price{color:#56834d;font-size:22px;font-weight:bold;margin-top:15px}
+.buy{
+  display:block;text-align:center;margin-top:15px;padding:11px;border-radius:10px;
+  background:#78a86b;color:white;text-decoration:none;font-weight:bold
+}
+.buy:hover{background:#5e8e52}
+.tip-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.tip{
+  background:white;border-radius:18px;padding:25px;box-shadow:0 5px 20px #0000000d
+}
+.tip h3{margin-bottom:10px;color:#527b4d}
+.tip p{color:#68736a;line-height:1.6}
+footer{background:#243126;color:white;text-align:center;padding:30px}
+footer p{color:#cbd5cc;margin-top:8px}
+.section-dark{background:#101010;color:white}
+.section-dark .title p{color:#aaa}
+.section-dark .card{background:#181818;border:1px solid #292929}
+.section-dark .content h3{color:white}
+.section-dark .content p{color:#aaa}
+.section-dark .card:hover{border-color:#00e5ff}
+@media(max-width:600px){
+  header h1{font-size:35px}
+  header p{font-size:15px}
+  nav a{font-size:12px;margin:0 5px}
+  .title h2{font-size:28px}
+}
+</style>
+</head>
+
+<body>
+
+<header id="home">
+  <div>
+    <h1>🌿 HAIRCARE</h1>
+    <p>Website perawatan rambut yang menggabungkan kesehatan rambut, berbagai gaya rambut, dan koleksi serum.</p>
+    <a href="#kesehatan" class="btn">Mulai Jelajah</a>
+  </div>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#kesehatan">Kesehatan</a>
+  <a href="#gaya">Gaya Rambut</a>
+  <a href="#serum">Serum</a>
+  <a href="#tips">Tips</a>
+</nav>
+
+<!-- KESEHATAN RAMBUT: halaman utama dari file kesehatan rambut -->
+<section class="container" id="kesehatan">
+  <div class="title">
+    <h2>💚 Kesehatan Rambut</h2>
+    <p>Rambut yang keren akan lebih baik jika tetap dirawat dan dijaga kesehatannya.</p>
+  </div>
+
+  <div class="info">
+    <p><b>🔥 Rambut Panjang</b><br>
+    Rambut panjang memberikan tampilan yang unik dan bebas. Cocok untuk gaya santai, rock, metal, maupun sekadar tampil beda.</p>
+
+    <p><b>😎 Perawatan</b><br>
+    Rambut panjang perlu dirawat agar tetap bersih dan sehat. Rajin mencuci, menyisir, dan menjaga kebersihan rambut bisa membuatnya terlihat lebih rapi.</p>
+
+    <p><b>💀 Quote</b><br>
+    “Rambut boleh panjang, tapi kesehatan jangan di lupakan.”</p>
+  </div>
+</section>
+
+<!-- GAYA RAMBUT dari file Gaya rambut -->
+<section class="section-dark" id="gaya">
+  <div class="container">
+    <div class="title">
+      <h2>🔥 Gaya Rambut</h2>
+      <p>Pilihan potongan rambut keren dan modern.</p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=80" alt="Modern Mullet">
+        <div class="content">
+          <h3>Modern Mullet</h3>
+          <p>Gaya rambut modern dengan bagian belakang yang lebih panjang.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=800&q=80" alt="Low Taper">
+        <div class="content">
+          <h3>Low Taper</h3>
+          <p>Potongan rapi dengan gradasi tipis pada bagian samping.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80" alt="Mid Taper">
+        <div class="content">
+          <h3>Mid Taper</h3>
+          <p>Gaya taper dengan gradasi sedang yang terlihat tegas.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80" alt="Classic Hair">
+        <div class="content">
+          <h3>Classic Hair</h3>
+          <p>Gaya klasik yang simpel, rapi, dan cocok untuk berbagai suasana.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERUM dari file Serum -->
+<section class="container" id="serum">
+  <div class="title">
+    <h2>✨ Koleksi Hair Serum</h2>
+    <p>Pilih serum sesuai kebutuhan rambutmu.</p>
+  </div>
+
+  <div class="products">
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80" alt="Hair Growth Serum">
+      <div class="product-content">
+        <h3>🌱 Hair Growth Serum</h3>
+        <div class="rating">★★★★★</div>
+        <p>Serum untuk membantu menjaga kondisi rambut dan kulit kepala sebagai bagian dari perawatan rutin.</p>
+        <div class="price">Rp59.000</div>
+        <a href="#tips" class="buy">Lihat Tips</a>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=800&q=80" alt="Moisture Serum">
+      <div class="product-content">
+        <h3>💧 Moisture Serum</h3>
+        <div class="rating">★★★★★</div>
+        <p>Membantu rambut terasa lebih lembut dan tidak mudah terasa kering.</p>
+        <div class="price">Rp65.000</div>
+        <a href="#tips" class="buy">Lihat Tips</a>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=800&q=80" alt="Shiny Hair Serum">
+      <div class="product-content">
+        <h3>✨ Shiny Hair Serum</h3>
+        <div class="rating">★★★★☆</div>
+        <p>Membantu rambut terlihat lebih berkilau dan terasa lebih halus.</p>
+        <div class="price">Rp55.000</div>
+        <a href="#tips" class="buy">Lihat Tips</a>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1522338242992-e1a54906a8da?auto=format&fit=crop&w=800&q=80" alt="Anti-Frizz Serum">
+      <div class="product-content">
+        <h3>🛡️ Anti-Frizz Serum</h3>
+        <div class="rating">★★★★★</div>
+        <p>Membantu membuat rambut lebih mudah diatur dan mengurangi tampilan kusut.</p>
+        <div class="price">Rp62.000</div>
+        <a href="#tips" class="buy">Lihat Tips</a>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80" alt="Scalp Care Serum">
+      <div class="product-content">
+        <h3>🌿 Scalp Care Serum</h3>
+        <div class="rating">★★★★☆</div>
+        <p>Serum yang dirancang sebagai bagian dari rutinitas perawatan kulit kepala.</p>
+        <div class="price">Rp70.000</div>
+        <a href="#tips" class="buy">Lihat Tips</a>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=800&q=80" alt="Herbal Hair Serum">
+      <div class="product-content">
+        <h3>🍃 Herbal Hair Serum</h3>
+        <div class="rating">★★★★☆</div>
+        <p>Serum dengan konsep perawatan berbahan alami untuk penggunaan sehari-hari.</p>
+        <div class="price">Rp68.000</div>
+        <a href="#tips" class="buy">Lihat Tips</a>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=800&q=80" alt="Premium Hair Serum">
+      <div class="product-content">
+        <h3>💎 Premium Hair Serum</h3>
+        <div class="rating">★★★★★</div>
+        <p>Serum premium untuk membantu rambut terlihat lebih halus dan terawat.</p>
+        <div class="price">Rp89.000</div>
+        <a href="#tips" class="buy">Lihat Tips</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- TIPS -->
+<section class="container" id="tips">
+  <div class="title">
+    <h2>🌱 Tips Rambut Sehat</h2>
+    <p>Kebiasaan sederhana untuk menjaga rambut tetap terawat.</p>
+  </div>
+
+  <div class="tip-grid">
+    <div class="tip">
+      <h3>🧴 Pilih Produk</h3>
+      <p>Gunakan produk berdasarkan kebutuhan rambut dan kulit kepala.</p>
+    </div>
+    <div class="tip">
+      <h3>💧 Jangan Berlebihan</h3>
+      <p>Gunakan serum secukupnya sesuai petunjuk pada produk.</p>
+    </div>
+    <div class="tip">
+      <h3>🔥 Kurangi Panas</h3>
+      <p>Penggunaan alat styling bersuhu tinggi sebaiknya tidak berlebihan.</p>
+    </div>
+    <div class="tip">
+      <h3>🪮 Jaga Kebersihan</h3>
+      <p>Rawat kebersihan rambut dan kulit kepala secara rutin.</p>
+    </div>
+    <div class="tip">
+      <h3>✂️ Potong Berkala</h3>
+      <p>Potong rambut secara berkala agar tetap rapi dan mudah ditata.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <h3>🌿 HAIRCARE</h3>
+  <p>Kesehatan Rambut • Gaya Rambut • Hair Serum</p>
+  <p>© 2026 HairCare Project</p>
+</footer>
+
+</body>
+                              </html>
